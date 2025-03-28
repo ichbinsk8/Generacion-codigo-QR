@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de codigos QR </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" ></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div>
+        <form action="" id="formulario" class="formulario">
+            <h1>Registro de computadores</h1>
+            <!--<label for="ownerName">Nombre del propietario:</label>-->
+            <div  class="input-wrapper">
+            <input type="text" id="ownerName" placeholder="Nombre completo de la persona">
+            </div>
+            <div  class="input-wrapper">
+            <!--<label for="computerID">ID del computador:</label>-->
+            <input type="text" id="computerID" placeholder="ID del equipo">
+        </div>
+            <button class="btn" id="btn" onclick="generateQR()">Guardar</button>
+            <button class="btn" id="btn" onclick="generateQR()"> información computadores</button>
+        </form>
+        
+
+    <div id="qrcode" class="qrcode"></div>
+    </div>
+    
+
+    
+</body>
+</html>
